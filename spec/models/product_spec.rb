@@ -39,6 +39,14 @@ describe Product do
 		it { should_not be_valid }
 	end
 
+	describe "when price is a string value" do
+		before do
+			@product.price = "Hello"
+		end
+
+		it { should_not be_valid }
+	end
+
 	describe "when quantity is not integer" do
 		before do
 			@product.quantity = 5.89
