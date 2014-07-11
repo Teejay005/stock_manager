@@ -27,7 +27,8 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 
 group :test do
-  gem 'minitest-spec-rails'
+  # gem 'minitest-spec-rails'
+  gem 'rspec-rails'
 end
 
 # Use ActiveModel has_secure_password
